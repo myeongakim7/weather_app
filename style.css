@@ -1,0 +1,67 @@
+/* style.css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+#weather {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#weather .box {
+  border: 1px solid #ccc;
+  padding: 100px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  background-color: skyblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+}
+#weather h1 {
+  margin-bottom: 20px;
+}
+#weather ul li {
+  margin-bottom: 20px;
+}
+
+.cityname {
+  font-size: 50px;
+  font-weight: 700;
+}
+.temp {
+  font-size: 80px;
+  font-weight: 700;
+}
+.icon {
+  width: 100%;
+}
+.desc {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#select {
+  width: 200px;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+#select:hover {
+  color: #000;
+}
