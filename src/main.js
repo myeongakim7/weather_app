@@ -5,7 +5,7 @@ let city_name = "seoul";
 // let API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${API_KEY}`;
 
 // 도시명 업데이트
-function getWeatherData(cityname = "seoul") {
+function getWeatherData(cityname) {
   city_name = cityname;
   API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${API_KEY}`;
 
@@ -19,7 +19,7 @@ function getWeatherData(cityname = "seoul") {
       // 이 안에서 함수를 실행시켜줘야 보임
     });
 }
-getWeatherData();
+getWeatherData("seoul");
 // () < 안에 아무 것도 넣지않아도 함수 실행함. seoul이라는 인자 넣어서 그 함수자료 안의 인자를 실행시키게 함
 
 function showWeather(data) {
