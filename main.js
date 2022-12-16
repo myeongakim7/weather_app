@@ -1,8 +1,8 @@
 // js
 
-const API_KEY = "7da8cd09bfaaedc18b007356aecf7b8f";
+const API_KEY = "e7c3e6b00e4325c6fb24d9db6023b944";
 let city_name = "seoul";
-let API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${API_KEY}`;
+// let API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${API_KEY}`;
 
 // 도시명 업데이트
 function getWeatherData(cityname) {
@@ -24,7 +24,7 @@ getWeatherData("seoul");
 
 function showWeather(data) {
   const name = data.name; // 도시명
-  const temp = parseInt(data.main.temp - 273.15); // 날씨 온도 , parseInt= 정수로 만드는 함수 ,
+  const temp = parseInt(data.main.temp - 273.15); // 날씨 온도 , parseInt= 정수로 만드는 함수
   const desc = data.weather[0].main; // 날씨 상태
   const icon = data.weather[0].icon;
   console.log(name, temp, desc, icon);
@@ -41,7 +41,7 @@ function showWeather(data) {
   // iconE1.innerHTML = `<i class="fa-solid fa-${desc}"></i>`;
   // iconE1.innerHTML = `<img src="src/images/${icon}.svg" alt="img">`;
 
-  // 날씨에 따른 아이콘 바꾸기
+  // 날씨 상태에 따른 아이콘 바꾸기
   let weather_icon = data.weather[0].icon;
   console.log(weather_icon);
   const iconE1 = document.querySelector(".icon");
