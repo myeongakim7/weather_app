@@ -45,11 +45,11 @@ function showWeather(data) {
   let weather_icon = data.weather[0].icon;
   console.log(weather_icon);
   const iconE1 = document.querySelector(".icon");
-  //   let test = wicon(weather_icon);
-  //   iconE1.innerHTML = `
-  // <img src="${test}" alt="${test}">`;
+  let icon_src = geticon(weather_icon);
+  iconE1.src = icon_src;
+  iconE1.innerHTML = `<img src="${icon_src}" alt="${icon_src}"/>`;
 
-  $(function wicon(weather_icon) {
+  function geticon(weather_icon) {
     let iconArray = [
       "01d",
       "01n",
@@ -93,14 +93,13 @@ function showWeather(data) {
     ];
 
     for (var i = 0; i < iconArray.length; i++) {
-      if (iconArray[i] == weather_icon[i]) {
+      if (iconArray[i] == weather_icon) {
         return iconArray_svg[i];
         break;
       }
     }
-
-    // return "none";
-  });
+    return "none";
+  }
 
   // 도시명 선택 변경 이벤트
   const select = document.getElementById("select");
@@ -142,74 +141,74 @@ function showWeather(data) {
     // document.querySelector(".box").style.backgroundimage =
     //   "url(" + bgArray[0] + ")";
   });
-
-  var today = new Date();
-
-  //요일 구하기
-  let t = today.getDay();
-  var now = t;
-  console.log(now);
-
-  if (now == 0) {
-    greeting = "Sunday";
-  } else if (now == 1) {
-    greeting = "Monday";
-  } else if (now == 2) {
-    greeting = "Tuesday";
-  } else if (now == 3) {
-    greeting = "Wednesday";
-  } else if (now == 4) {
-    greeting = "Tursday";
-  } else if (now == 5) {
-    greeting = "Friday";
-  } else if (now == 6) {
-    greeting = "Saturday";
-  } else {
-    document.write("unknown");
-  }
-
-  // 현재 연/월/일
-
-  let theYears = today.getFullYear();
-  let theMonth = today.getMonth();
-  let theDate = today.getDate();
-
-  let theHours = today.getHours();
-  var h = theHours;
-  // theHours의 함수가 길어서 변수 설정
-
-  var m = theMonth + 1;
-  console.log(m);
-  let currentMonth = "January";
-
-  if (m == 1) {
-    currentMonth = "January";
-  } else if (m == 2) {
-    currentMonth = "February";
-  } else if (m == 3) {
-    currentMonth = "March";
-  } else if (m == 4) {
-    currentMonth = "April";
-  } else if (m == 5) {
-    currentMonth = "May";
-  } else if (m == 6) {
-    currentMonth = "June";
-  } else if (m == 7) {
-    currentMonth = "July";
-  } else if (m == 8) {
-    currentMonth = "August";
-  } else if (m == 9) {
-    currentMonth = "September";
-  } else if (m == 10) {
-    currentMonth = "October";
-  } else if (m == 11) {
-    currentMonth = "November";
-  } else {
-    currentMonth = "December";
-  }
-
-  let current = currentMonth + " " + theDate + "<br>" + greeting;
-  console.log(current);
-  let dateE1 = document.querySelector(".date");
-  dateE1.innerHTML = current;
 }
+
+var today = new Date();
+
+//요일 구하기
+let t = today.getDay();
+var now = t;
+console.log(now);
+
+if (now == 0) {
+  greeting = "Sunday";
+} else if (now == 1) {
+  greeting = "Monday";
+} else if (now == 2) {
+  greeting = "Tuesday";
+} else if (now == 3) {
+  greeting = "Wednesday";
+} else if (now == 4) {
+  greeting = "Tursday";
+} else if (now == 5) {
+  greeting = "Friday";
+} else if (now == 6) {
+  greeting = "Saturday";
+} else {
+  document.write("unknown");
+}
+
+// 현재 연/월/일
+
+let theYears = today.getFullYear();
+let theMonth = today.getMonth();
+let theDate = today.getDate();
+
+let theHours = today.getHours();
+var h = theHours;
+// theHours의 함수가 길어서 변수 설정
+
+var m = theMonth + 1;
+console.log(m);
+let currentMonth = "January";
+
+if (m == 1) {
+  currentMonth = "January";
+} else if (m == 2) {
+  currentMonth = "February";
+} else if (m == 3) {
+  currentMonth = "March";
+} else if (m == 4) {
+  currentMonth = "April";
+} else if (m == 5) {
+  currentMonth = "May";
+} else if (m == 6) {
+  currentMonth = "June";
+} else if (m == 7) {
+  currentMonth = "July";
+} else if (m == 8) {
+  currentMonth = "August";
+} else if (m == 9) {
+  currentMonth = "September";
+} else if (m == 10) {
+  currentMonth = "October";
+} else if (m == 11) {
+  currentMonth = "November";
+} else {
+  currentMonth = "December";
+}
+
+let current = currentMonth + " " + theDate + "<br>" + greeting;
+console.log(current);
+let dateE1 = document.querySelector(".date");
+dateE1.innerHTML = current;

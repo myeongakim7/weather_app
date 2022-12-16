@@ -1,48 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>날씨 앱</title>
-    <link rel="stylesheet" href="./src/style.css" />
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/67eff22c15.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <div id="weather">
-      <div class="box">
-        <div class="text-box">
-          <ul>
-            <li class="cityname">City_name</li>
-            <li class="temp">Temporature</li>
-            <li class="icon">
-              icon
-              <i class="fa-solid fa-cloud"></i>
-            </li>
-            <li class="desc">description</li>
-          </ul>
-          <img src="" alt="" />
-          <div class="date"></div>
-          <select name="select" id="select">
-            <option value="seoul">Seoul</option>
-            <option value="Anyang-si">Anyang-si</option>
-            <option value="gwangju">Gwangju</option>
-            <option value="daejeon">Daejeon</option>
-            <option value="busan">Busan</option>
-            <option value="jeju">Jeju</option>
-          </select>
-        </div>
-        <!--text-box-->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>날씨 앱</title>
+  <link rel="stylesheet" href="./src/style.css" />
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/67eff22c15.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="weather">
+    <div class="box">
+      <div class="text-box">
+        <ul>
+          <li class="cityname">City_name</li>
+          <li class="temp">Temporature</li>
+          <li class="icon">icon</li>
+          <li class="desc">description</li>
+        </ul>
+        <div class="date"></div>
+        <select name="select" id="select">
+          <option value="seoul">Seoul</option>
+          <option value="Anyang-si">Anyang-si</option>
+          <option value="gwangju">Gwangju</option>
+          <option value="daejeon">Daejeon</option>
+          <option value="busan">Busan</option>
+          <option value="jeju">Jeju</option>
+        </select>
       </div>
-      <!--box-->
+      <!--text-box-->
+    </div>
+    <!--box-->
 
-      <!-- <div class="icon-box">
+    <!-- <div class="icon-box">
       <i class="fa-solid fa-cloud"></i>
       <i class="fa-solid fa-bolt"></i>
       <i class="fa-solid fa-sun"></i>
@@ -63,9 +57,10 @@
       <i class="fa-solid fa-cloud-moon"></i>
       <i class="fa-solid fa-cloud-meatball"></i>
     </div> -->
-    </div>
-    <!--weather-->
+  </div>
+  <!--weather-->
 
-    <script src="./src/main.js"></script>
-  </body>
+  <script src="./src/main.js"></script>
+</body>
+
 </html>
