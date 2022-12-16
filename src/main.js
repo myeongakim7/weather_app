@@ -19,7 +19,7 @@ function getWeatherData(cityname) {
       // 이 안에서 함수를 실행시켜줘야 보임
     });
 }
-getWeatherData("seoul");
+getWeatherData(seoul);
 // () < 안에 아무 것도 넣지않아도 함수 실행함. seoul이라는 인자 넣어서 그 함수자료 안의 인자를 실행시키게 함
 
 function showWeather(data) {
