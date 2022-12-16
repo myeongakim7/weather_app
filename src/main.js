@@ -5,7 +5,7 @@ let city_name = "seoul";
 // let API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${API_KEY}`;
 
 // 도시명 업데이트
-function getWeatherData(cityname) {
+function getWeatherData(cityname = "seoul") {
   city_name = cityname;
   API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${API_KEY}`;
 
