@@ -72,7 +72,7 @@ function showWeather(data) {
     ];
 
     let iconArray_svg = [
-      ".../images/01d.svg",
+      "/images/01d.svg",
       "../images/01n.svg",
       "../images/02d.svg",
       "../images/02n.svg",
