@@ -12,4 +12,8 @@
     <li>날짜/요일 추가</li>
     <li>날씨 상태 마다 바뀌는 아이콘 이미지 추가</li>
   </ul>
+  <hr>
+  <h3>산출물 이미지</h3>
+  <img src="capture.jpg" alt="image1">
+  <img src="capture2.jpg" alt="image2"/>
   
