@@ -1,4 +1,6 @@
  <h1>Today's Weather app</h1>
+ <h3>깃허브 주소: https://myeongakim7.github.io/weather_app/
+</h3>
   <h3>2022/12/14</h3>
   <ul>
     <li>API 가져오기</li>
